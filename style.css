@@ -1,0 +1,50 @@
+/* Basic styling */
+.code-editor {
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+/* Toolbar styling */
+.code-editor__toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Vertically center the buttons */
+  margin-bottom: 10px;
+}
+
+.code-editor__button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.code-editor__button--copy {
+  background-color: #4287f5;
+  color: white;
+}
+
+.code-editor__button--save {
+  background-color: #4caf50;
+  color: white;
+}
+
+.code-editor__button--lock {
+  background-color: #ff5733;
+  color: white;
+  width: 60px;
+}
+
+/* Code styling */
+.code-editor__code {
+  border: 1px solid #757575;
+  border-radius: 5px;
+  font-family: "Courier New", monospace;
+  color: lightgray;
+  width: 100%;
+  min-height: 100px;
+  max-height: 300px;
+}

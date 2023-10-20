@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="code-editor">
+      <div class="code-editor__toolbar">
+        <button
+          class="code-editor__button code-editor__button--copy"
+          onclick="copyCode()"
+        >
+          Copy
+        </button>
+        <button
+          class="code-editor__button code-editor__button--save"
+          onclick="saveCode()"
+        >
+          Save
+        </button>
+        <button
+          class="code-editor__button code-editor__button--lock"
+          onclick="toggleLock()"
+        >
+          Lock
+        </button>
+      </div>
+
+      <pre class="code-editor__code" contenteditable="true" id="editableDiv">
+        <code>
+            function greet() {
+                console.log('Hello, World!');
+            }
+        </code>
+    </pre>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
